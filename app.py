@@ -25,7 +25,7 @@ nh_sum_of_healthcare, nh_healthcare_category = \
 districts = df_healthcare["ILCE_ADI"].unique()
 
 app.layout = html.Div([
-    html.H3(['Socio-economic Status (SES) Scores & Types of Healthcare Institutions in Istanbul'], className="title-1-container"),
+    html.H1(['Socio-economic Status (SES) Scores & Types of Healthcare Institutions in Istanbul'], className="title-1-container"),
     html.Div([
         dcc.Graph(id="bar-chart", figure=go.Figure())], className="bar-chart-container"),
     html.Div([
